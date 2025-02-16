@@ -19,5 +19,7 @@ WORKDIR /app
 # ✅ Copy all files (fixing the error)
 COPY . /app
 
+Expose 8000
+
 # Explicitly set the correct binary path and use `sh -c`
 CMD ["/root/.local/bin/uv", "run", "app.py"]
